@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{610E9A87-9680-462B-9D41-9CCA2F1C098C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TRLAFCoSys.App</RootNamespace>
+    <AssemblyName>TRLAFCoSys.App</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\..\..\Softwares\1.0 APPLICATION\1.0 Microsoft\VS 2013\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>..\..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\..\..\Softwares\1.0 APPLICATION\1.0 Microsoft\VS 2013\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\..\..\Softwares\1.0 APPLICATION\1.0 Microsoft\VS 2013\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\..\Softwares\1.0 APPLICATION\1.0 Microsoft\VS 2013\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\..\..\..\..\Softwares\1.0 APPLICATION\1.0 Microsoft\VS 2013\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>..\..\..\..\..\Softwares\1.0 APPLICATION\1.0 Microsoft\VS 2013\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\..\..\..\Softwares\1.0 APPLICATION\1.0 Microsoft\VS 2013\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>C:\Users\Atienza\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Softwares\1.0 APPLICATION\1.0 Microsoft\VS 2013\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.1.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Financial\frmActualDailySales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\frmActualDailySales.Designer.cs">
+      <DependentUpon>frmActualDailySales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MilkRecords\frmRawMilkProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MilkRecords\frmRawMilkProcess.Designer.cs">
+      <DependentUpon>frmRawMilkProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\frmSupplyInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\frmSupplyInventory.Designer.cs">
+      <DependentUpon>frmSupplyInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Financial\frmExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\frmExpenses.Designer.cs">
+      <DependentUpon>frmExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MilkRecords\frmMilkDeliveryUtilization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MilkRecords\frmMilkDeliveryUtilization.Designer.cs">
+      <DependentUpon>frmMilkDeliveryUtilization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Financial\frmProductSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\frmProductSale.Designer.cs">
+      <DependentUpon>frmProductSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\frmMilkClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\frmMilkClass.Designer.cs">
+      <DependentUpon>frmMilkClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\frmFarmersRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\frmFarmersRecord.Designer.cs">
+      <DependentUpon>frmFarmersRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Financial\frmPayroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\frmPayroll.Designer.cs">
+      <DependentUpon>frmPayroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Products\frmProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Products\frmProduction.Designer.cs">
+      <DependentUpon>frmProduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Products\frmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Products\frmProduct.Designer.cs">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\frmSupplyType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\frmSupplyType.Designer.cs">
+      <DependentUpon>frmSupplyType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MilkRecords\frmMilkCollectionRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MilkRecords\frmMilkCollectionRecord.Designer.cs">
+      <DependentUpon>frmMilkCollectionRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboardV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboardV2.Designer.cs">
+      <DependentUpon>frmDashboardV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CustomAttributes\UserRoleValidator.cs" />
+    <Compile Include="Helpers\Themes\SideBar.cs" />
+    <Compile Include="Helpers\LocalUtils.cs" />
+    <Compile Include="IFormActions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Financial\frmActualDailySales.resx">
+      <DependentUpon>frmActualDailySales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MilkRecords\frmRawMilkProcess.resx">
+      <DependentUpon>frmRawMilkProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\frmSupplyInventory.resx">
+      <DependentUpon>frmSupplyInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Financial\frmExpenses.resx">
+      <DependentUpon>frmExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MilkRecords\frmMilkDeliveryUtilization.resx">
+      <DependentUpon>frmMilkDeliveryUtilization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Financial\frmProductSale.resx">
+      <DependentUpon>frmProductSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\frmMilkClass.resx">
+      <DependentUpon>frmMilkClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\frmFarmersRecord.resx">
+      <DependentUpon>frmFarmersRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Financial\frmPayroll.resx">
+      <DependentUpon>frmPayroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Products\frmProduction.resx">
+      <DependentUpon>frmProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Products\frmProduct.resx">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\frmSupplyType.resx">
+      <DependentUpon>frmSupplyType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MilkRecords\frmMilkCollectionRecord.resx">
+      <DependentUpon>frmMilkCollectionRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboardV2.resx">
+      <DependentUpon>frmDashboardV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\conference-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-male-user-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\x-mark-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\login-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\login-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\menu-4-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dashboard-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\info-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\maximize-window-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\minimize-window-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\close-window-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\restore-window-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gear-2-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\arrow-37-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\libraries\Helpers\Helpers.csproj">
+      <Project>{12e8c23e-00ca-49df-8e04-d86c83f3c088}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TRLAFCoSys.Logic\TRLAFCoSys.Logic.csproj">
+      <Project>{7825e5b3-3808-405f-a627-0f420e26a52b}</Project>
+      <Name>TRLAFCoSys.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TRLAFCoSys.Queries\TRLAFCoSys.Queries.csproj">
+      <Project>{38c60a06-31d4-4c9f-b5df-e5a245f07fd7}</Project>
+      <Name>TRLAFCoSys.Queries</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-4-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-5-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-3-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-3-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-2-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-2-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-2-white-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-details-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-3-256_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-2-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-3-1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-13-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downloading-updates-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downloading-updates-2561.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milk-2-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conference-256_dogder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paypal-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milk-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-food-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-details-256_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-receiving-256.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\save-128.png" />
+    <None Include="Resources\edit-3-2561.png" />
+    <None Include="Resources\refresh-256_gray.png" />
+    <None Include="Resources\arrow-39-256.png" />
+    <None Include="Resources\conference-256_w.png" />
+    <None Include="Resources\product-48.png" />
+    <None Include="Resources\milk-2-256 %282%29.png" />
+    <None Include="Resources\delivery-food-256 %282%29.png" />
+    <None Include="Resources\milk-256 %282%29.png" />
+    <None Include="Resources\folder-3-64.png" />
+    <None Include="Resources\package-2-256.png" />
+    <None Include="Resources\ice-cream-256.png" />
+    <None Include="Resources\services-256.png" />
+    <None Include="Resources\banknotes-48.png" />
+    <None Include="Resources\money-256 %282%29.png" />
+    <None Include="Resources\money-256 %282%291.png" />
+    <None Include="Resources\money-2-256.png" />
+    <None Include="Resources\shopping-basket-256.png" />
+    <None Include="Resources\arrow-31-256.png" />
+    <None Include="Resources\arrow-96-256.png" />
+    <None Include="Resources\logout-256.png" />
+    <None Include="Resources\user-4-256.png" />
+    <None Include="Resources\lock-256.png" />
+    <None Include="Resources\x-mark-3-256.png" />
+    <None Include="Resources\group-256.png" />
+    <None Include="Resources\x-mark-3-256 %281%29.png" />
+    <None Include="Resources\group-128.png" />
+    <None Include="Resources\group-64.png" />
+    <None Include="Resources\shopping-basket-2561.png" />
+    <None Include="Resources\tool-box-256.png" />
+    <None Include="Resources\home-5-256_1.png" />
+    <None Include="Resources\house-256.png" />
+    <None Include="Resources\coins-256.png" />
+    <None Include="Resources\cog-256.png" />
+    <None Include="Resources\farmer.png" />
+    <None Include="Resources\box-2-256.png" />
+    <None Include="Resources\package-2-2561.png" />
+    <None Include="Resources\services-2561.png" />
+    <None Include="Resources\today-256 %282%29.png" />
+    <None Include="Resources\cart-73-256.png" />
+    <None Include="Resources\banknotes-256.png" />
+    <None Include="Resources\bottle-11-256.png" />
+    <None Include="Resources\bg.jpg" />
+    <None Include="Resources\cow-256.png" />
+    <None Include="Resources\power-256 %281%29 - Copy.png" />
+    <None Include="Resources\power-256 %282%29.png" />
+    <None Include="Resources\power-256 %282%291.png" />
+    <None Include="Resources\help-256.png" />
+    <Content Include="todo.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

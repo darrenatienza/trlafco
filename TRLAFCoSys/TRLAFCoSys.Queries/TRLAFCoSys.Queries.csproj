@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38C60A06-31D4-4C9F-B5DF-E5A245F07FD7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TRLAFCoSys.Queries</RootNamespace>
+    <AssemblyName>TRLAFCoSys.Queries</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.EnterpriseLibrary.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Domain\ActualDailySaleOutletReport.cs" />
+    <Compile Include="Core\Domain\ActualDailySaleOutlet.cs" />
+    <Compile Include="Core\Domain\ActualDailySaleProductRecord.cs" />
+    <Compile Include="Core\Domain\ActualDailySaleProduct.cs" />
+    <Compile Include="Core\Domain\DailySaleRecord.cs" />
+    <Compile Include="Core\Domain\Farmer.cs" />
+    <Compile Include="Core\Domain\ProductSale.cs" />
+    <Compile Include="Core\Domain\Production.cs" />
+    <Compile Include="Core\Domain\Product.cs" />
+    <Compile Include="Core\Domain\ProductRawMaterial.cs" />
+    <Compile Include="Core\Domain\SupplyClass.cs" />
+    <Compile Include="Core\Domain\SupplyType.cs" />
+    <Compile Include="Core\Domain\MilkClass.cs" />
+    <Compile Include="Core\Domain\MilkUtilizeCustomer.cs" />
+    <Compile Include="Core\Domain\MilkUtilizeProduct.cs" />
+    <Compile Include="Core\Domain\MilkUtilizeProductRecord.cs" />
+    <Compile Include="Core\Domain\MilkUtilizeRecord.cs" />
+    <Compile Include="Core\Domain\MilkCollection.cs" />
+    <Compile Include="Core\Domain\Payroll.cs" />
+    <Compile Include="Core\Domain\Role.cs" />
+    <Compile Include="Core\Domain\Expense.cs" />
+    <Compile Include="Core\Domain\ExpenseType.cs" />
+    <Compile Include="Core\Domain\SupplyInventory.cs" />
+    <Compile Include="Core\Domain\User.cs" />
+    <Compile Include="Core\IRepositories\IMilkUtilizeCustomerRepo.cs" />
+    <Compile Include="Core\IRepositories\IMilkUtilizeProductRecordRepo.cs" />
+    <Compile Include="Core\IRepositories\IProductRawMaterialRepo.cs" />
+    <Compile Include="Core\IRepositories\IProductionRepo.cs" />
+    <Compile Include="Core\IRepositories\IProductSaleRepo.cs" />
+    <Compile Include="Core\IRepositories\IProductRepo.cs" />
+    <Compile Include="Core\IRepositories\ISupplyInventoryRepo.cs" />
+    <Compile Include="Core\IRepositories\IExpenseTypeRepo.cs" />
+    <Compile Include="Core\IRepositories\IExpenseRepo.cs" />
+    <Compile Include="Core\IRepositories\IPayrollRepo.cs" />
+    <Compile Include="Core\IRepositories\IMilkCollectionRepo.cs" />
+    <Compile Include="Core\IRepositories\IMilkUtilizeRecordRepo.cs" />
+    <Compile Include="Core\IRepositories\IMilkUtilizeProductRepo.cs" />
+    <Compile Include="Core\IRepositories\IMilkClassRepo.cs" />
+    <Compile Include="Core\IRepositories\ISupplyClass.cs" />
+    <Compile Include="Core\IRepositories\ISupplyTypeRepo.cs" />
+    <Compile Include="Core\IRepositories\IFarmerRepo.cs" />
+    <Compile Include="Core\IRepositories\IDailySaleRecordRepo.cs" />
+    <Compile Include="Core\IRepositories\IActualDailySaleProductRepo.cs" />
+    <Compile Include="Core\IRepositories\IActualDailySaleOutletRepo.cs" />
+    <Compile Include="Core\IRepositories\IRoleRepository.cs" />
+    <Compile Include="Core\IRepositories\IRepository.cs" />
+    <Compile Include="Core\IRepositories\IUserRepository.cs" />
+    <Compile Include="Core\IUnitOfWork.cs" />
+    <Compile Include="Migrations\202001310837536_initial.cs" />
+    <Compile Include="Migrations\202001310837536_initial.Designer.cs">
+      <DependentUpon>202001310837536_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001312152072_production.cs" />
+    <Compile Include="Migrations\202001312152072_production.Designer.cs">
+      <DependentUpon>202001312152072_production.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002152202510_addProductSales.cs" />
+    <Compile Include="Migrations\202002152202510_addProductSales.Designer.cs">
+      <DependentUpon>202002152202510_addProductSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002161426347_updateProductSale.cs" />
+    <Compile Include="Migrations\202002161426347_updateProductSale.Designer.cs">
+      <DependentUpon>202002161426347_updateProductSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002170602064_updateProduct.cs" />
+    <Compile Include="Migrations\202002170602064_updateProduct.Designer.cs">
+      <DependentUpon>202002170602064_updateProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002170633224_updateProduct1.cs" />
+    <Compile Include="Migrations\202002170633224_updateProduct1.Designer.cs">
+      <DependentUpon>202002170633224_updateProduct1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002171338255_updateDailySalesRecord.cs" />
+    <Compile Include="Migrations\202002171338255_updateDailySalesRecord.Designer.cs">
+      <DependentUpon>202002171338255_updateDailySalesRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002201509084_update_milkCollections.cs" />
+    <Compile Include="Migrations\202002201509084_update_milkCollections.Designer.cs">
+      <DependentUpon>202002201509084_update_milkCollections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Persistence\EntityConfiguration\UserConfiguration.cs" />
+    <Compile Include="Persistence\DataContext.cs" />
+    <Compile Include="Persistence\Repositories\ActualDailySaleProductRepo.cs" />
+    <Compile Include="Persistence\Repositories\DailySaleRecordRepo.cs" />
+    <Compile Include="Persistence\Repositories\FarmerRepo.cs" />
+    <Compile Include="Persistence\Repositories\ProductRawMaterialRepo.cs" />
+    <Compile Include="Persistence\Repositories\ProductionRepo.cs" />
+    <Compile Include="Persistence\Repositories\ProductSaleRepo.cs" />
+    <Compile Include="Persistence\Repositories\ProductRepo.cs" />
+    <Compile Include="Persistence\Repositories\SupplyClassRepo.cs" />
+    <Compile Include="Persistence\Repositories\SupplyTypeRepo.cs" />
+    <Compile Include="Persistence\Repositories\MilkClassRepo.cs" />
+    <Compile Include="Persistence\Repositories\MilkUtilizeProductRecordRepo.cs" />
+    <Compile Include="Persistence\Repositories\MilkUtilizeProductRepo.cs" />
+    <Compile Include="Persistence\Repositories\MilkUtilizeCustomerRepo.cs" />
+    <Compile Include="Persistence\Repositories\MilkUtilizeRecordRepo.cs" />
+    <Compile Include="Persistence\Repositories\MilkCollectionRepo.cs" />
+    <Compile Include="Persistence\Repositories\PayrollRepo.cs" />
+    <Compile Include="Persistence\Repositories\ExpenseTypeRepo.cs" />
+    <Compile Include="Persistence\Repositories\SupplyInventoryRepo.cs" />
+    <Compile Include="Persistence\Repositories\ExpenseRepo.cs" />
+    <Compile Include="Persistence\Repositories\ActualDailySaleOutletRepo.cs" />
+    <Compile Include="Persistence\Repositories\RoleRepository.cs" />
+    <Compile Include="Persistence\Repositories\Repository.cs" />
+    <Compile Include="Persistence\Repositories\UserRepository.cs" />
+    <Compile Include="Persistence\UnitOfWork.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202001310837536_initial.resx">
+      <DependentUpon>202001310837536_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001312152072_production.resx">
+      <DependentUpon>202001312152072_production.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002152202510_addProductSales.resx">
+      <DependentUpon>202002152202510_addProductSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002161426347_updateProductSale.resx">
+      <DependentUpon>202002161426347_updateProductSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002170602064_updateProduct.resx">
+      <DependentUpon>202002170602064_updateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002170633224_updateProduct1.resx">
+      <DependentUpon>202002170633224_updateProduct1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002171338255_updateDailySalesRecord.resx">
+      <DependentUpon>202002171338255_updateDailySalesRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002201509084_update_milkCollections.resx">
+      <DependentUpon>202002201509084_update_milkCollections.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

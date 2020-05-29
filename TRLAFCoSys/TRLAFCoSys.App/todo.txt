@@ -1,0 +1,20 @@
+﻿04-21-20
+add raw milk product
+
+04-19-2020
+Add Key press event on Unit Price and Quantity of Products Module. Key press will handle numeric value type only.
+Add Key press event on Quantity of Production Module. Key press will handle numeric value type only.
+Remove unwanted setting of production id on SetProductionData that results to 0 value of production id.
+	0 value of production id will leads to adding new record not updating record on production module
+
+
+
+milk delivery utilization needs update
+product inventory form will be separate from supply inventory
+actual daily sales needs update
+add unit to supply type
+indicate unit in supply inventory form and product raw material form
+
+finish production form
+create product entity
+create Production Form and production entity

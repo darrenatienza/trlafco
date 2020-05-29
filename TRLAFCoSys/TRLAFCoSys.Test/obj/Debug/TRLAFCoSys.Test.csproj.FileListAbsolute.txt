@@ -1,0 +1,10 @@
+D:\PL\2019-2020\TRLAFCo\TRLAFCoSys\TRLAFCoSys.Test\bin\Debug\TRLAFCoSys.Test.dll.config
+D:\PL\2019-2020\TRLAFCo\TRLAFCoSys\TRLAFCoSys.Test\bin\Debug\TRLAFCoSys.Test.dll
+D:\PL\2019-2020\TRLAFCo\TRLAFCoSys\TRLAFCoSys.Test\bin\Debug\TRLAFCoSys.Test.pdb
+D:\PL\2019-2020\TRLAFCo\TRLAFCoSys\TRLAFCoSys.Test\bin\Debug\EntityFramework.dll
+D:\PL\2019-2020\TRLAFCo\TRLAFCoSys\TRLAFCoSys.Test\bin\Debug\EntityFramework.SqlServer.dll
+D:\PL\2019-2020\TRLAFCo\TRLAFCoSys\TRLAFCoSys.Test\bin\Debug\EntityFramework.xml
+D:\PL\2019-2020\TRLAFCo\TRLAFCoSys\TRLAFCoSys.Test\bin\Debug\EntityFramework.SqlServer.xml
+D:\PL\2019-2020\TRLAFCo\TRLAFCoSys\TRLAFCoSys.Test\obj\Debug\TRLAFCoSys.Test.csprojResolveAssemblyReference.cache
+D:\PL\2019-2020\TRLAFCo\TRLAFCoSys\TRLAFCoSys.Test\obj\Debug\TRLAFCoSys.Test.dll
+D:\PL\2019-2020\TRLAFCo\TRLAFCoSys\TRLAFCoSys.Test\obj\Debug\TRLAFCoSys.Test.pdb

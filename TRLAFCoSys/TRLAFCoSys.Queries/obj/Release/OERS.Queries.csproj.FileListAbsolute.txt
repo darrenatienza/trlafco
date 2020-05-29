@@ -1,0 +1,16 @@
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\OERS.Queries.dll.config
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\OERS.Queries.dll
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\OERS.Queries.pdb
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\EntityFramework.dll
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\EntityFramework.SqlServer.dll
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\Microsoft.Practices.EnterpriseLibrary.Security.dll
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\Microsoft.Practices.ObjectBuilder2.dll
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\Microsoft.Practices.Unity.dll
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\EntityFramework.xml
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\bin\Release\EntityFramework.SqlServer.xml
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\obj\Release\OERS.Queries.dll
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\obj\Release\OERS.Queries.pdb
+D:\PL\BsuSystem\Web\OERS\OERS.Queries\obj\Release\OERS.Queries.csprojResolveAssemblyReference.cache

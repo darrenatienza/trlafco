@@ -1,0 +1,24 @@
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\obj\Debug\ProjectName.Queries.csprojResolveAssemblyReference.cache
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\ProjectName.Queries.dll.config
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\ProjectName.Queries.dll
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\ProjectName.Queries.pdb
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\EntityFramework.dll
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\EntityFramework.SqlServer.dll
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\Microsoft.Practices.Unity.dll
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\EntityFramework.xml
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\bin\Debug\EntityFramework.SqlServer.xml
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\obj\Debug\ProjectName.Queries.dll
+D:\PL\BsuSystem\9. StudentAttendanceSys\Queries\obj\Debug\ProjectName.Queries.pdb
+D:\PL\Entity Framework\Entity Framework Starter\ProjectName.Queries\ProjectName.Queries\bin\Debug\ProjectName.Queries.dll.config
+D:\PL\Entity Framework\Entity Framework Starter\ProjectName.Queries\ProjectName.Queries\bin\Debug\ProjectName.Queries.dll
+D:\PL\Entity Framework\Entity Framework Starter\ProjectName.Queries\ProjectName.Queries\bin\Debug\ProjectName.Queries.pdb
+D:\PL\Entity Framework\Entity Framework Starter\ProjectName.Queries\ProjectName.Queries\bin\Debug\EntityFramework.xml
+D:\PL\Entity Framework\Entity Framework Starter\ProjectName.Queries\ProjectName.Queries\bin\Debug\EntityFramework.SqlServer.xml
+D:\PL\Entity Framework\Entity Framework Starter\ProjectName.Queries\ProjectName.Queries\obj\Debug\ProjectName.Queries.csprojResolveAssemblyReference.cache
+D:\PL\Entity Framework\Entity Framework Starter\ProjectName.Queries\ProjectName.Queries\obj\Debug\ProjectName.Queries.dll
+D:\PL\Entity Framework\Entity Framework Starter\ProjectName.Queries\ProjectName.Queries\obj\Debug\ProjectName.Queries.pdb

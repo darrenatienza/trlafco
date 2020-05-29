@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7825E5B3-3808-405F-A627-0F420E26A52B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TRLAFCoSys.Logic</RootNamespace>
+    <AssemblyName>TRLAFCoSys.Logic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleCrypto">
+      <HintPath>..\..\..\libraries\SimpleCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\IBaseLogic.cs" />
+    <Compile Include="Contracts\IDailySaleRecordLogic.cs" />
+    <Compile Include="Contracts\IProductionLogic.cs" />
+    <Compile Include="Contracts\IProductSaleLogic.cs" />
+    <Compile Include="Contracts\IProductLogic.cs" />
+    <Compile Include="Contracts\IRawMilkProcessLogic.cs" />
+    <Compile Include="Contracts\ISupplyInventoryLogic.cs" />
+    <Compile Include="Contracts\ISupplyClassLogic.cs" />
+    <Compile Include="Contracts\IUserLogic.cs" />
+    <Compile Include="Contracts\ISupplyTypeLogic.cs" />
+    <Compile Include="Contracts\IExpenseTypeLogic.cs" />
+    <Compile Include="Contracts\IExpenseLogic.cs" />
+    <Compile Include="Contracts\IMilkUtilizeProductLogic.cs" />
+    <Compile Include="Contracts\IMilkUtilizeCustomerLogic.cs" />
+    <Compile Include="Contracts\IMilkProductLogic.cs" />
+    <Compile Include="Contracts\IMilkUtilizeLogic.cs" />
+    <Compile Include="Contracts\IFarmerLogic.cs" />
+    <Compile Include="Contracts\IMilkClassLogic.cs" />
+    <Compile Include="Contracts\IMilkCollectionLogic.cs" />
+    <Compile Include="Contracts\IPayrollLogic.cs" />
+    <Compile Include="Factories.cs" />
+    <Compile Include="Implementors\DailySaleRecordLogic.cs" />
+    <Compile Include="Implementors\ProductionLogic.cs" />
+    <Compile Include="Implementors\ProductSaleLogic.cs" />
+    <Compile Include="Implementors\ProductLogic.cs" />
+    <Compile Include="Implementors\RawMilkProcessLogic.cs" />
+    <Compile Include="Implementors\SupplyInventoryLogic.cs" />
+    <Compile Include="Implementors\SupplyClassLogic.cs" />
+    <Compile Include="Implementors\SupplyTypeLogic.cs" />
+    <Compile Include="Implementors\UserLogic.cs" />
+    <Compile Include="Implementors\ExpenseTypeLogic.cs" />
+    <Compile Include="Implementors\ExpenseLogic.cs" />
+    <Compile Include="Implementors\MilkUtilizeProductLogic.cs" />
+    <Compile Include="Implementors\MilkUtilizeCustomerLogic.cs" />
+    <Compile Include="Implementors\MilkProductLogic.cs" />
+    <Compile Include="Implementors\MilkUtilizeLogic.cs" />
+    <Compile Include="Implementors\FarmerLogic.cs" />
+    <Compile Include="Implementors\MilkClassLogic.cs" />
+    <Compile Include="Implementors\MilkCollectionLogic.cs" />
+    <Compile Include="Implementors\PayrollLogic.cs" />
+    <Compile Include="Models\DailySaleRecordModel.cs" />
+    <Compile Include="Models\ExpenseModel.cs" />
+    <Compile Include="Models\ExpenseTypeModel.cs" />
+    <Compile Include="Models\MilkUtilizeProductModel.cs" />
+    <Compile Include="Models\MilkUtilizeCustomerModel.cs" />
+    <Compile Include="Models\MilkProductModel.cs" />
+    <Compile Include="Models\MilkUtilizeModel.cs" />
+    <Compile Include="Models\FarmerModel.cs" />
+    <Compile Include="Models\MilkClassModel.cs" />
+    <Compile Include="Models\MilkCollectionModel.cs" />
+    <Compile Include="Models\PayrollModel.cs" />
+    <Compile Include="Models\MilkSoldModel.cs" />
+    <Compile Include="Models\ProductionModel.cs" />
+    <Compile Include="Models\ProductSaleModel.cs" />
+    <Compile Include="Models\ProductModel.cs" />
+    <Compile Include="Models\ProductSupplyTypeModel.cs" />
+    <Compile Include="Models\RawMilkProcessModel.cs" />
+    <Compile Include="Models\SupplyClassModel.cs" />
+    <Compile Include="Models\SupplyInventoryModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\SupplyTypeModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\libraries\Helpers\Helpers.csproj">
+      <Project>{12e8c23e-00ca-49df-8e04-d86c83f3c088}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TRLAFCoSys.Queries\TRLAFCoSys.Queries.csproj">
+      <Project>{38c60a06-31d4-4c9f-b5df-e5a245f07fd7}</Project>
+      <Name>TRLAFCoSys.Queries</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
